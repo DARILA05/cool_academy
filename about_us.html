@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Кодировка -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Название вкладки -->
+    <title>Про онлайн-университет Cool Academy &ndash; кто мы такие и что делаем.</title>
+    <!-- Favicon (иконка сайта) -->
+    <link rel="icon" type="image/x-icon" href="images/ico/favicon.ico">
+    <!-- Используемый шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Основной стиль -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Адаптивный стиль (медиазапросы) -->
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body>
+    <!-- Контейнер -->
+    <div class="container">
+        <!-- Шапка -->
+        <header class="header fill">
+            <!-- Блок контента шапки -->
+            <div class="wrapper-panel-h">
+                <!-- Логотип -->
+                <button class="logo" onclick="document.location='index.html'">
+                    <img src="images/svg/logo_header.svg" alt="logo_header">
+                </button>
+                <!-- Навигация -->
+                <nav class="nav-menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <button class="btn-1" id="open_panel_courses">
+                                Все курсы
+                            </button>
+                        </li>
+                        <li class="menu-item">
+                            <button class="btn-1" onclick="document.location='contacts.html'">
+                                Контакты
+                            </button>
+                        </li>
+                        <li class="menu-item">
+                            <button class="btn-1" onclick="window.scrollTo(0, 0);">
+                                О нас
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="btn-2" onclick="document.location='account/log_in.html'">
+                Войти
+            </button>
+            <!-- Меню-бургер (в мобильной вёрстке) -->
+            <button id="menu-burger" class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+        <!-- Мобильная навигация -->
+        <nav class="burger-menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <button class="btn-1" onclick="window.open('about_us.html', '_blank')">
+                        Все курсы
+                    </button>
+                </li>
+                <li class="menu-item">
+                    <button class="btn-1" onclick="document.location='contacts.html'">
+                        Контакты
+                    </button>
+                </li>
+                <li class="menu-item">
+                    <button class="btn-1" onclick="document.location='about_us.html'">
+                        О нас
+                    </button>
+                </li>
+            </ul>
+            <button class="btn-2" onclick="document.location='account/log_in.html'">
+                Войти
+            </button>
+        </nav>
+        <!-- Блок с курсами -->
+        <div class="panel_courses">
+            <div class="wrapper-info">
+                <!-- Разделение курсов -->
+                <div class="wrapper-class-courses">
+                    <button class="btn-2 active" id="buy">
+                        Платные
+                    </button>
+                    <button class="btn-2 not-active" id="free">
+                        Бесплатные
+                    </button>
+                </div>
+                <!-- Список курсов -->
+                <div class="blocks-courses_buy">
+                    <div class="course">
+                        <h3 class="name-course">
+                            Java-разработчик
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">9 месяцев</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <h3 class="name-course">
+                            Frontend-разработчик
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">9 месяцев</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <h3 class="name-course">
+                            Веб-дизайн
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">12 месяцев</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <h3 class="name-course">
+                            Python-разработчик
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">4 месяца</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <h3 class="name-course">
+                            QA-manual
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">5 месяцев</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <h3 class="name-course">
+                            Граф-дизайны
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">10 месяцев</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <h3 class="name-course">
+                            Data Scientist
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">25 месяцев</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="blocks-courses_free">
+                    <div class="course">
+                        <h3 class="name-course">
+                            Основы программирования
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">3 месяца</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <h3 class="name-course">
+                            Основы HTML
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">2 месяца</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <h3 class="name-course">
+                            Основы CSS
+                        </h3>
+                        <div class="panel">
+                            <p class="desc">
+                                <span class="block-desc">2 месяца</span>
+                            </p>
+                            <button class="icon-btn" onclick="window.open('about_us.html', '_blank')">
+                                <img src="images/svg/link_click.svg" alt="link_click">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Задний фон (для фиксирующих блоков) -->
+        <div class="overlay" id="overlay"></div>
+        <!-- Контент -->
+        <main class="main">
+            <div class="about_us">
+                <h1 class="h1">
+                    Cool Academy
+                </h1>
+                <p class="desc">
+                    Образовательная платформа, на которой можно с нуля освоить востребованную профессию, а также получить знания и навыки для перехода на новый уровень в карьере.
+                </p>
+                <div class="abs-img1">
+                    <img src="images/png/laptop-for-programming.png" alt="laptop-for-programming">
+                </div>
+                <div class="abs-img2">
+                    <img src="images/png/headphones.png" alt="headphones">
+                </div>
+                <div class="abs-img3">
+                    <img src="images/png/site.png" alt="site">
+                </div>
+                <div class="abs-img4">
+                    <img src="images/png/html-css-prototipe-site-2.png" alt="html-css-prototipe-site-2">
+                </div>
+                <div class="abs-bg">
+                    <img src="images/png/blending.png" alt="blending">
+                </div>
+            </div>
+            <div class="progress-content">
+                <h1 class="h1">
+                    Наша цель &ndash; <span class="select-h1">ваше трудоустройство</span>
+                </h1>
+                <div class="progress_blocks">
+                    <div class="block">
+                        <div class="icon">
+                            <img src="images/svg/laptop-programming.svg" alt="laptop-programming">
+                        </div>
+                        <h2 class="h2-block">
+                            Обучение
+                        </h2>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <img src="images/svg/test.svg" alt="test">
+                        </div>
+                        <h2 class="h2-block">
+                            Тесты
+                        </h2>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <img src="images/svg/practica.svg" alt="practica">
+                        </div>
+                        <h2 class="h2-block">
+                            Практика
+                        </h2>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <img src="images/svg/trainee.svg" alt="trainee">
+                        </div>
+                        <h2 class="h2-block">
+                            Обучение
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="content-main">
+                <h1 class="h1">
+                    Наши преподаватели &ndash; <span class="select-h1">профессионалы</span> из разных сфер
+                </h1>
+                <div class="main-wrapper block-teachers">
+                    <div class="textbox teachers">
+                        <p class="desc">
+                            В качестве преподавателей мы приглашаем специалистов, которые знают ИТ изнутри: владельцев бизнеса, руководителей, менеджеров, ученых и сотрудников университетов. Эти специалисты ведут лекции и семинары, отвечают на вопросы студентов, помогают с домашними заданиями и консультируют индивидуально.
+                        </p>
+                    </div>
+                    <div class="block-img">
+                        <img src="images/png/teachers.png" alt="teachers">
+                    </div>
+                </div>
+            </div>
+            <div class="content-main">
+                <h1 class="h1">
+                    Почему <span class="select-h1">студенты</span> выбирают<br>Cool Academy?
+                </h1>
+                <p class="desc cen">
+                    <span class="select-desc">Cool Academy</span> &ndash; лидирующая образовательная онлайн-платформа для специалистов в ИТ и диджитал. Обучаем с нуля востребованным специальностям и профессиям.
+                </p>
+                <div class="blocks students">
+                    <div class="block consistent_color_1n" tabindex="0">
+                        <h2 class="h2-block">
+                            Обучение новым профессиям
+                        </h2>
+                        <div class="icon">
+                            <img src="images/svg/science.svg" alt="science">
+                        </div>
+                        <div class="info-block">
+                            <p class="desc">
+                                Готовим специалистов актуальных профессий и для разных областей
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block consistent_color_2n" tabindex="0">
+                        <h2 class="h2-block">
+                            База знаний
+                        </h2>
+                        <div class="icon">
+                            <img src="images/svg/book.svg" alt="book">
+                        </div>
+                        <div class="info-block">
+                            <p class="desc">
+                                В распоряжении студентов есть онлайн-библиотека с видеоуроками, учебными статьями и подкастами. Учится можно где угодно с помощью ноутбука, планшета или смартфона
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block consistent_color_2n" tabindex="0">
+                        <h2 class="h2-block">
+                            Комьюнити
+                        </h2>
+                        <div class="icon">
+                            <img src="images/svg/community.svg" alt="community">
+                        </div>
+                        <div class="info-block">
+                            <p class="desc">
+                                Наша платформа объединяет крупнейшее сообщество IT-специалистов: практикующих экспертов, работодателей и людей, которые осваивают новые профессии
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more_info">
+                <h1 class="h1">
+                    Занятия у нас по-настоящему полезны
+                </h1>
+                <div class="clauses">
+                    <div class="clause">
+                        <h2 class="h2-block">
+                            50+ исследований
+                        </h2>
+                        <p class="desc">
+                            проводим ежегодно. На их основе создаём и улучшаем программы
+                        </p>
+                    </div>
+                    <div class="clause">
+                        <h2 class="h2-block">
+                            964 тыс. + студентов
+                        </h2>
+                        <p class="desc">
+                            получили востребованные профессии и успешно строят карьеру
+                        </p>
+                    </div>
+                    <div class="clause">
+                        <h2 class="h2-block">
+                            70% выпускников
+                        </h2>
+                        <p class="desc">
+                            обратившихся в наш центр карьеры, нашли работу по специальности
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Форма обратной связи -->
+            <div class="content-feedback">
+                <h2 class="h2-form">
+                    Оставьте контакты, и мы <span class="select-h2">поможем</span> подобрать IT-курс для вашей цели
+                </h2>
+                <form class="feedback" action="feedback.html" method="post">
+                    <input name="name" id="name" placeholder="Имя" type="text" autocomplete="off" required>
+                    <input name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$" placeholder="Email" type="email" autocomplete="off" required>
+                    <input name="tel" id="tel" placeholder="+7(___)___-__-__" pattern="\+7\(\d{3}\)\d{3}-\d{2}-\d{2}" type="tel" autocomplete="off" required>
+                    <button type="submit">
+                        Отправить
+                    </button>
+                    <p class="desc">
+                        Нажимая кнопку, я соглашаюсь с <a href="" target="_blank" class="link">Положением о персональных данных</a> и даю согласие на их обработку и хранение.
+                    </p>
+                </form>
+            </div>
+        </main>
+        <!-- Панель "липких" кнопок -->
+        <div class="btns-panel">
+            <!-- Техподдержка -->
+            <div class="block-sup">
+                <button class="support">
+                    <!-- Иконка -->
+                    <img src="images/svg/support.svg" alt="support">
+                    <!-- Линии отмены -->
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Иконка телеграмма (с ссылкой) -->
+                <a class="telegram-icon-sup" href="https://web.telegram.org/k/" target="_blank">
+                    <img src="images/svg/telegram-icon-sup.svg" alt="telegram-icon-sup">
+                </a>
+                <!-- Иконка вконтакте (с ссылкой) -->
+                <a class="vk-icon-sup" href="https://vk.com/" target="_blank">
+                    <img src="images/svg/vk-icon-sup.svg" alt="vk-icon-sup">
+                </a>
+            </div>
+            <!-- Кнопка "upper" -->
+            <div class="block-upper">
+                <button class="upper" onclick="window.scrollTo(0, 0);">
+                    <!-- Иконка -->
+                    <img src="images/svg/arrow_up.svg" alt="arrow_up">
+                </button>
+            </div>
+        </div>
+        <!-- Подвал -->
+        <footer class="footer fill">
+            <!-- Блок контента подвала -->
+            <div class="wrapper-panel-f">
+                <!-- Логотип -->
+                <button class="logo" onclick="window.scrollTo(0, 0);">
+                    <img src="images/svg/logo_footer.svg" alt="logo_header">
+                </button>
+                <!-- Меню документации -->
+                <nav class="doc-menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <button class="btn-3" onclick="window.open('about_us.html', '_blank')">
+                                Документация
+                            </button>
+                        </li>
+                        <li class="menu-item">
+                            <button class="btn-3" onclick="window.open('about_us.html', '_blank')">
+                                Политика конфиденциальности
+                            </button>
+                        </li>
+                        <li class="menu-item">
+                            <button class="btn-3" onclick="window.open('about_us.html', '_blank')">
+                                О платформе
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Блок контента подвала -->
+            <div class="wrapper-panel-f">
+                <!-- Защита АП -->
+                <p class="copyright">
+                    &copy; 2024 Cool Programming Academy
+                </p>
+                <!-- Социальные сети -->
+                <div class="social-panel">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <span class="youtube-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.3397 19.6521L18.6605 17.4688C18.2522 17.2792 17.9168 17.4917 17.9168 17.9437V22.0563C17.9168 22.5083 18.2522 22.7208 18.6605 22.5312L23.3376 20.3479C23.748 20.1562 23.748 19.8438 23.3397 19.6521ZM20.0001 0C8.95429 0 0.00012207 8.95417 0.00012207 20C0.00012207 31.0458 8.95429 40 20.0001 40C31.046 40 40.0001 31.0458 40.0001 20C40.0001 8.95417 31.046 0 20.0001 0ZM20.0001 28.125C9.76262 28.125 9.58346 27.2021 9.58346 20C9.58346 12.7979 9.76262 11.875 20.0001 11.875C30.2376 11.875 30.4168 12.7979 30.4168 20C30.4168 27.2021 30.2376 28.125 20.0001 28.125Z" fill="white"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="https://web.telegram.org/k/" target="_blank">
+                        <span class="telegram-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0001 0C31.0461 0 40.0001 8.954 40.0001 20C40.0001 31.046 31.0461 40 20.0001 40C8.95412 40 0.00012207 31.046 0.00012207 20C0.00012207 8.954 8.95412 0 20.0001 0ZM28.8841 12C28.1221 12.014 26.9521 12.414 21.3261 14.724C17.3771 16.3726 13.439 18.0473 9.51212 19.748C8.55212 20.1253 8.05012 20.494 8.00612 20.854C7.91812 21.546 8.92612 21.76 10.1941 22.168C11.2281 22.5 12.6201 22.888 13.3441 22.904C14.0001 22.9173 14.7321 22.6507 15.5401 22.104C21.0588 18.424 23.9075 16.5647 24.0861 16.526C24.2121 16.498 24.3861 16.462 24.5061 16.566C24.6241 16.67 24.6121 16.866 24.5981 16.92C24.4981 17.342 19.3161 21.996 19.0181 22.302L18.8741 22.446C17.7741 23.532 16.6641 24.242 18.5801 25.488C20.3121 26.614 21.3201 27.332 23.1001 28.488C24.2401 29.224 25.1341 30.098 26.3101 29.992C26.8521 29.942 27.4101 29.44 27.6961 27.94C28.3661 24.4 29.6861 16.724 29.9901 13.56C30.0092 13.2976 29.9978 13.0338 29.9561 12.774C29.9314 12.5642 29.8286 12.3714 29.6681 12.234C29.4261 12.038 29.0501 11.998 28.8841 12Z" fill="white"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="https://vk.com/" target="_blank">
+                        <span class="vk-icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0001 0C8.95429 0 0.00012207 8.95417 0.00012207 20C0.00012207 31.0458 8.95429 40 20.0001 40C31.046 40 40.0001 31.0458 40.0001 20C40.0001 8.95417 31.046 0 20.0001 0ZM27.6918 22.5646C27.6918 22.5646 29.4605 24.3104 29.896 25.1208C29.9085 25.1389 29.9161 25.1528 29.9189 25.1625C30.0953 25.4583 30.139 25.6924 30.0501 25.8646C29.9043 26.1521 29.4043 26.2938 29.2335 26.3063H26.1085C25.8918 26.3063 25.4376 26.25 24.8876 25.8708C24.4647 25.575 24.048 25.0896 23.6418 24.6167C23.0355 23.9125 22.5105 23.3042 21.9814 23.3042C21.9141 23.3039 21.8473 23.3144 21.7835 23.3354C21.3835 23.4646 20.871 24.0354 20.871 25.5562C20.871 26.0312 20.496 26.3042 20.2314 26.3042H18.8001C18.3126 26.3042 15.773 26.1333 13.523 23.7604C10.7689 20.8542 8.28971 15.025 8.26887 14.9708C8.11262 14.5937 8.43554 14.3917 8.78762 14.3917H11.9439C12.3647 14.3917 12.5022 14.6479 12.598 14.875C12.7105 15.1396 13.123 16.1917 13.8001 17.375C14.898 19.3042 15.571 20.0875 16.1105 20.0875C16.2117 20.0863 16.3111 20.0606 16.4001 20.0125C17.1043 19.6208 16.973 17.1104 16.9418 16.5896C16.9418 16.4917 16.9397 15.4667 16.5793 14.975C16.321 14.6187 15.8814 14.4833 15.6147 14.4333C15.7226 14.2844 15.8648 14.1636 16.0293 14.0812C16.5126 13.8396 17.3835 13.8042 18.248 13.8042H18.7293C19.6668 13.8167 19.9085 13.8771 20.248 13.9625C20.9355 14.1271 20.9501 14.5708 20.8897 16.0896C20.871 16.5208 20.8522 17.0083 20.8522 17.5833L20.846 17.9833C20.8251 18.7562 20.8001 19.6333 21.346 19.9937C21.4163 20.0402 21.4992 20.0641 21.5835 20.0625C21.773 20.0625 22.3439 20.0625 23.8897 17.4104C24.3647 16.5559 24.7789 15.669 25.1293 14.7562C25.1605 14.7021 25.2522 14.5354 25.3605 14.4708C25.4413 14.4324 25.5294 14.4118 25.6189 14.4104H29.3293C29.7335 14.4104 30.0105 14.4708 30.0626 14.6271C30.1543 14.875 30.046 15.6312 28.3522 17.925L27.596 18.9229C26.0605 20.9354 26.0605 21.0375 27.6918 22.5646Z" fill="white"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Фреймворки -->
+    <script src="https://unpkg.com/imask"></script> <!-- Создание маски для Input -->
+    <!-- Скрипты -->
+    <script defer src="js/btn_upper.js"></script> <!-- Появление кнопки "upper" -->
+    <script defer src="js/btn_support.js"></script> <!-- Расскрытие списка чатов поддержки -->
+    <script defer src="js/panel_courses.js"></script> <!-- Появление блока с курсами -->
+    <script defer src="js/phone_mask.js"></script> <!-- Маска номера телефона -->
+    <script defer src="js/menu-burger.js"></script> <!-- Меню-бургер -->
+    <script>
+        window.addEventListener("resize", () => {
+            // Закрытие блока с курсами
+            if (window.innerWidth <= 1050) {
+                document.querySelector(".panel_courses").classList.remove('open');
+                document.body.classList.remove("not_scroll_courses");
+                document.querySelector("#overlay").classList.remove('open-courses');
+            }
+    
+            // Закрытие бургер-меню
+            if (window.innerWidth >= 1050) {
+                document.querySelector(".menu-burger").classList.remove("open");
+                document.querySelector(".burger-menu").classList.remove("open");
+                document.body.classList.remove("not_scroll_b-m");
+            }
+        })
+    </script>
+</body>
+</html>
