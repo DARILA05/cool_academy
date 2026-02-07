@@ -22,10 +22,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById('downloadBtn').addEventListener('click', () => {
         const link = document.createElement('a');
-        link.href = '../taxi_trips.zip';
-        link.download = "zip-taxi";
+        link.href = '../suka_linux.zip';
+        link.download = "suka_linux";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     })
+
 })
