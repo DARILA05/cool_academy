@@ -22,11 +22,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById('downloadBtn').addEventListener('click', () => {
         const link = document.createElement('a');
-        link.href = '../suka_linux.zip';
-        link.download = "suka_linux";
+        link.href = '../schizophreniya.zip';
+        link.download = "schizophreniya";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     })
 
 })
+
